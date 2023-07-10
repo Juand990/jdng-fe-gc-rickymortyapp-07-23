@@ -1,0 +1,14 @@
+<div class="container">   
+    <div class="row">
+        <div class="col-sm-4 ms-0 mt-3 mx-2 char" *ngFor="let char of characters">
+            <div>
+                <img src="{{char.image}}">
+                <p>{{char.name}}</p>
+                <button (click)="detalle(char)" class="btn btn-primary" type="button">Detalle
+                    <!-- <a class="nav-link" routerLink="/detalle" >Detalle</a> -->
+                </button>                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <app-detalle [data]="charDetalle"></app-detalle> -->
